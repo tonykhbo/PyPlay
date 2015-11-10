@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import bottle as bt
-from bt import route, run, template
 
 @bt.route('/<filename>')
 def index(filename):
