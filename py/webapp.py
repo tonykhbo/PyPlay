@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import bottle as bt
 
-@bt.route('~/PyPlay/<filename>', method = "GET")
+@bt.route('/PyPlay/<filename>', method = "GET")
 def index(filename):
     f = open('../'+filename)
     return f.read()
