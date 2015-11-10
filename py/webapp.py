@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 import bottle as bt
 
-@bt.route('~/PyPlay/<filename>')
+@bt.route('~/PyPlay/<filename>', method = "GET")
 def index(filename):
-    return bt.static_file(filename, root='./PyPlay/')
+    f = open('../'+filename)
+    return f.read()
 
 #run(host='104.131.246.240', port=8083, debug=True)
 bt.debug(True)
