@@ -20,6 +20,11 @@ def stylesheet(filename):
     f = open('../css/'+ filename )
     return f.read()
 
+@bt.route('/js/<filename>', method = "GET")
+def stylesheet(filename):
+    f = open('../js/'+ filename )
+    return f.read()
+
 bt.debug(True)
 
 #Set your host(Web Server IP) here, port 80 will only require you to type in the Web Server IP to access the web page
