@@ -15,7 +15,7 @@ def index():
     f = open('../index.html')
     return f.read()
 
-@bt.route('/', method = "GET")
+@bt.route('/css/<filename>', method = "GET")
 def stylesheet(filename):
     f = open('../css/'+ filename )
     return f.read()
