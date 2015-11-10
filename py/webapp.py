@@ -9,4 +9,4 @@ def index():
 bt.debug(True)
 
 if __name__ == '__main__':    
-    bt.run(host='104.131.246.240', port=8080, debug=True)
+    bt.run(host='104.131.246.240', port=80, debug=True)
