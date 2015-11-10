@@ -15,9 +15,9 @@ def index():
     f = open('../index.html')
     return f.read()
 
-@bt.route('/root/PyPlay/style.css')
+@bt.route('/', method = "GET")
 def stylesheet(filename):
-    f = open('../css/style.css')
+    f = open('../css/'+ filename )
     return f.read()
 
 bt.debug(True)
